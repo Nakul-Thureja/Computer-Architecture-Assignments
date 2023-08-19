@@ -1,0 +1,8 @@
+Import('*')
+DebugFlag('VECTOR','display the vectors')
+DebugFlag('ADDRESULT','display the resultant vector from VectorAddition')
+DebugFlag('DOTRESULT','display the resultant value from VectorDotProduct')
+DebugFlag('NORMALIZE','display the resultant vectors from NormalizeVector')
+
+SimObject('Vector.py', sim_objects=['VectorOperations'])
+Source('vector_op.cc')
